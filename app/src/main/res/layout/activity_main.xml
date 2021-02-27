@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <Button
+        android:id="@+id/open"
+        android:onClick="openThedoor"
+        android:layout_width="405dp"
+        android:layout_height="83dp"
+        android:text="OPEN "
+        android:layout_marginTop="540dp" />
+
+    <Button
+        android:id="@+id/close"
+        android:onClick="closeThedoor"
+        android:layout_width="416dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="4dp"
+        android:text="CLOSE"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/Top"
+        android:onClick="Top"
+        android:layout_height="120dp"
+        android:layout_width="80dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="130dp"
+        android:background="@drawable/amam"
+        android:text="TOP"
+
+        android:layout_marginTop="140dp"
+         />
+
+    <Button
+        android:id="@+id/botom"
+        android:onClick="botom"
+        android:layout_height="120dp"
+        android:layout_width="80dp"
+        android:background="@drawable/khalf"
+        android:text="Bottom"
+        android:textSize="10dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="380dp"
+         />
+
+    <Button
+        android:id="@+id/left"
+        android:onClick="Lift"
+        android:layout_marginTop="280dp"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:background="@drawable/yassar"
+        android:text="Left"
+         />
+
+    <Button
+        android:id="@+id/right"
+        android:onClick="right"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/yamin"
+        android:text="Right"
+        android:layout_marginStart="250dp"
+       android:layout_marginTop="280dp"
+        android:layout_marginLeft="300dp" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="280dp"
+        android:onClick="stop"
+        android:text="STOP"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="130dp" />
+
+    <Button
+        android:id="@+id/bid"
+        android:onClick="bid"
+        android:layout_marginTop="400dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="k" />
+</FrameLayout>
+
+<!--?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/Top"
+        android:layout_width="178dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="232dp"
+        android:layout_marginRight="232dp"
+        android:onClick="Top"
+        app:srcCompat="@drawable/amam" />
+
+    <ImageView
+        android:id="@+id/botom"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="283dp"
+        android:layout_marginLeft="283dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:onClick="botom"
+        app:srcCompat="@drawable/khalf" />
+
+    <ImageView
+        android:id="@+id/right"
+        android:layout_width="113dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/Top"
+        android:layout_alignParentStart="true"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginRight="166dp"
+        android:layout_marginBottom="173dp"
+        android:layout_toStartOf="@+id/left"
+        android:layout_toLeftOf="@+id/left"
+        android:onClick="right"
+        app:srcCompat="@drawable/yasar" />
+
+    <ImageView
+        android:id="@+id/left"
+        android:layout_width="110dp"
+        android:layout_height="94dp"
+        android:layout_below="@+id/botom"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="211dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="159dp"
+        android:onClick="Lift"
+        app:srcCompat="@drawable/yamin" />
+
+    <ImageView
+        android:id="@+id/stop"
+        android:layout_width="290dp"
+        android:layout_height="210dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="261dp"
+        android:onClick="stop"
+        app:srcCompat="@drawable/ic_baseline_stop_circle_24" />
+
+    <ImageView
+        android:id="@+id/open"
+        android:onClick="opneThedor"
+        android:layout_width="186dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="129dp"
+        android:layout_marginLeft="129dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        app:srcCompat="@drawable/open" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="186dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/open"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="504dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginRight="118dp"
+        android:layout_marginBottom="53dp"
+        android:onClick="closeThedor"
+        app:srcCompat="@drawable/closed" />
+</RelativeLayout-->
